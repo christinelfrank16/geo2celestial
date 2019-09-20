@@ -1,0 +1,29 @@
+{
+  "name": "geo2celestial",
+  "version": "1.0.0",
+  "description": "Converts latitude and longitude to celestial coordinates",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christinelfrank16/geo2celestial.git"
+  },
+  "keywords": [
+    "celestial",
+    "coordinate",
+    "solar",
+    "latitude",
+    "longitude",
+    "right",
+    "ascension",
+    "declination"
+  ],
+  "author": "Christine Frank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christinelfrank16/geo2celestial/issues"
+  },
+  "homepage": "https://github.com/christinelfrank16/geo2celestial#readme"
+}
