@@ -1,22 +1,34 @@
-export class LatLongConverter {
-  constructor(lat, long) {
+export class Geo2Celestial {
+  constructor(lat, long, date) {
     //latitude
     this.latitude = lat; // degrees
     //longitude
     this.longitude = long; // degrees
 
+    if(date && typeof date === Date){
+      this.date = date;
+    } else {
+      this.date = new Date();
+    }
+  }
+
+  declination(){
     //assume looking straight up in sky
-    this.declination = lat; // hours
-    
+    return this.latitude;
+  }
+
+  // ra equals LAST at zenith
+  rigthAscension(){
     const julDay = this.convertJulianDay();
     const last = this.calcLAST(julDay, long);
-
-    this.rightAscention = last;
+    return last;
   }
+
+
 
   convertJulianDay(){
     // reference: https://en.wikipedia.org/wiki/Julian_day#Julian_date_calculation
-    const nowDate = new Date();
+    const nowDate = this.date;
 
     const date = nowDate.getDate();
     const month = nowDate.getMonth()+1; // base 0 for January
