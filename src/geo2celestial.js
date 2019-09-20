@@ -20,7 +20,7 @@ export class Geo2Celestial {
   // ra equals LAST at zenith
   rigthAscension(){
     const julDay = this.convertJulianDay();
-    const last = this.calcLAST(julDay, long);
+    const last = this.calcLAST(julDay, this.longitude);
     return last;
   }
 
