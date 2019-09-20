@@ -21,7 +21,7 @@
     "declination"
   ],
   "author": "Christine Frank",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/christinelfrank16/geo2celestial/issues"
   },
